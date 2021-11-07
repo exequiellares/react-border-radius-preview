@@ -9,7 +9,12 @@ const BorderRadiusPreview = () => {
     borderStyle: styleData.style,
     borderWidth: `${styleData.borderWidth}px`,
     borderColor: styleData.color,
-    borderRadius: `${styleData.radius}px`,
+    // borderRadius: `${styleData.radius}px`,
+    borderTopLeftRadius: `${styleData.borderTopLeftRadius}px`,
+    borderTopRightRadius: `${styleData.borderTopRightRadius}px`,
+    borderBottomLeftRadius: `${styleData.borderBottomLeftRadius}px`,
+    borderBottomRightRadius: `${styleData.borderBottomRightRadius}px`,
+
   }
 
   return (

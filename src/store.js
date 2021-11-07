@@ -6,7 +6,10 @@ const initialState = {
   color: 'red',
   style: 'solid',
   borderWidth: '1',
-  radius: '0'
+  borderTopLeftRadius: '0',
+  borderTopRightRadius: '0',
+  borderBottomLeftRadius: '0',
+  borderBottomRightRadius: '0',
 }
 
 const borderStyleSlice = createSlice({
@@ -16,10 +19,14 @@ const borderStyleSlice = createSlice({
     propertiesUpdated(state, action) {
       state.width = action.payload.width
       state.height = action.payload.height
-      state.radius = action.payload.radius
       state.style = action.payload.style
       state.color = action.payload.color
       state.borderWidth = action.payload.borderWidth
+      state.borderTopLeftRadius = action.payload.borderTopLeftRadius
+      state.borderTopRightRadius = action.payload.borderTopRightRadius
+      state.borderBottomLeftRadius = action.payload.borderBottomLeftRadius
+      state.borderBottomRightRadius = action.payload.borderBottomRightRadius
+
     }
   }
 })

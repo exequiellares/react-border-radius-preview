@@ -5,10 +5,13 @@ import './App.css'
 
 function App() {
   return (
-    <div className="container">
-      <PropertiesForm />
-      <BorderRadiusPreview />
-    </div>
+    <section>
+      <h1>React Border Preview</h1>
+      <div className="container">
+        <PropertiesForm />
+        <BorderRadiusPreview />
+      </div>
+    </section>
   );
 }
 
